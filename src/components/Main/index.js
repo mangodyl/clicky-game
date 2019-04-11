@@ -6,8 +6,8 @@ const Main = ({ children, score, topScore }) => {
     return (
         <div className="jumbotron">
             <div>
-                <h2>Score: {score}</h2>
-                <h3>Top Score: {topScore}</h3>
+                <h2 className="score-header">Score: {score}</h2>
+                <h3 className="score-header">Top Score: {topScore}</h3>
             </div>
             <div>
                 <Row>

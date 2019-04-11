@@ -2,4 +2,11 @@
     position: fixed;
     width: 100%;
     z-index: 2;
+    background-color: #415A77;
+    color: #010400;
+}
+
+.header {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2em;
 }
