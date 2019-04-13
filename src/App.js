@@ -29,7 +29,6 @@ class App extends Component {
 
   // On image click function
   handleOnClick = id => {
-    console.log(id);
     let clicked = this.state.clickedArray;
     // Check if clicked
     if (!clicked.includes(id)) {
@@ -39,7 +38,13 @@ class App extends Component {
         this.setState({
           score: this.state.score + 1,
           topScore: this.state.maxScore,
-          message: 'You got all of them right! Congratulations!'
+          message: 'You got all of them right! Congratulations!',
+        })
+
+        this.setState({
+          clickedArray: [],
+          score: 0,
+          images: this.shuffleImg(picArray)
         })
 
         // Else complete regular correct guess logic
@@ -72,10 +77,11 @@ class App extends Component {
         <Nav />
         <Main>
           <div>
+            <h1 className="message-header">{this.state.message}</h1>
             <h2 className="score-header">Score: {this.state.score}</h2>
             <h3 className="score-header">Top Score: {this.state.topScore}</h3>
           </div>
-          <div>
+          <div className="d-flex flex-wrap justify-content-center">
             {this.state.images.map(img => {
               return (<Pic
                 key={img.id}
