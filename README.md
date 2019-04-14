@@ -1,6 +1,6 @@
 # It's Always Sunny in Clickadelphia! :sunny:
 
-A fun little click-based game using React and MongoDB.
+A fun little click-based game using React.
 
 [https://mangodyl.github.io/clicky-game/](https://mangodyl.github.io/clicky-game/)
 
