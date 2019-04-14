@@ -66,7 +66,8 @@ class App extends Component {
       this.setState({
         score: 0,
         clickedArray: [],
-        message: "You've already clicked that one! Game over!"
+        message: "You've already clicked that one! Game over!",
+        images: this.shuffleImg(picArray)
       })
     }
   }
