@@ -8,3 +8,9 @@
 .score-header {
     font-family: 'Indie Flower', cursive;
 }
+
+@media only screen and (max-width: 1001px) {
+    .jumbotron {
+        padding-top: 130px;
+    }
+}

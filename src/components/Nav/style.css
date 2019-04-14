@@ -10,5 +10,12 @@
 .header {
     font-family: 'Roboto Mono', monospace;
     font-size: 2em;
-    margin-left: 35%;
+    margin-left: 22%;
+}
+
+@media only screen and (max-width: 1001px) {
+    .header {
+        font-size: 1.5em;
+        margin-left: 15%;
+    }
 }
